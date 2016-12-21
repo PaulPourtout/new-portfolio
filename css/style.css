@@ -47,7 +47,7 @@ section {
 /* Style boutons */
 
 .btn-custom {
-    background-color: #2ecc71;
+    background-color: #d67f07;
     color: #303841;
     text-shadow: 3px 2px 0 #fff;
     font-weight: bold;
@@ -73,7 +73,7 @@ section {
     bottom: 15px;
     left: 50%;
     transform: translateX(-50%);
-    box-shadow: inset 0 0 0 0 #2ecc71;
+    box-shadow: inset 0 0 0 0 #d67f07;
     transition: 0.4s ease-in-out;
     text-align: center;
 }
@@ -94,7 +94,7 @@ section {
 }
 
 .arrow-down:hover, .arrow-down:active, .arrow-down:focus {
-    box-shadow: inset 0px 60px 0 0 #2ecc71;
+    box-shadow: inset 0px 60px 0 0 #d67f07;
     /*color: #303841;*/
 }
 
@@ -108,7 +108,7 @@ section {
 }
 
 #main-navbar .container-fluid {
-    background-color: #2ecc71;
+    background-color: #d67f07;
 }
 
 #main-navbar .container-fluid a {
@@ -153,7 +153,7 @@ header .main-part {
 }
 
 header h1 {
-    color: #2ecc71;
+    color: #d67f07;
     text-shadow: 3px 3px 0 #4a525c;
     z-index: 50;
     font-weight: bold;
@@ -203,7 +203,7 @@ header .btn-custom {
 }
 
 #a-propos .deco-barre {
-    background-color: #2ecc71;
+    background-color: #d67f07;
     width: 5%;
     height: auto;
 }
@@ -223,7 +223,7 @@ header .btn-custom {
 }
 
 #a-propos .card figure {
-    border: 5px solid #2ecc71;
+    border: 5px solid #d67f07;
     border-radius: 50%;
     width: 100px;
     height: 100px;
@@ -255,7 +255,7 @@ header .btn-custom {
 #competences ul {
     list-style: none;
     padding-left: 20px;
-    border-left: 2px solid #2ecc71;
+    border-left: 2px solid #d67f07;
     font-size: 1.7rem;
     margin: 0;
 }
@@ -263,12 +263,31 @@ header .btn-custom {
 
 /* ===== MON TRAVAIL ===== */
 
+
+
 .projet-content {
     position: relative;
-    border: 5px solid #2ecc71;
+    border: 5px solid #d67f07;
     height: 250px;
-    background-size: 10%;
+    background-size: cover;
     background-position: center;
+    
+}
+
+.projet-container:nth-child(1) .projet-content {
+  background-image: url("../img/projet1.jpg");
+}
+
+.projet-container:nth-child(2) .projet-content {
+  background-image: url("../img/projet2.jpg");
+}
+
+.projet-container:nth-child(3) .projet-container {
+  background-image: url("../img/projet3.jpg");
+}
+
+.projet-container:nth-child(4) .projet-content {
+  background-image: url("../img/projet4.jpg");
 }
 
 #travail .projet-container {
