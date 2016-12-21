@@ -11,6 +11,9 @@
    <!-- CDN FONT AWESOME -->
    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
    <!-- Bootstrap -->
+
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
    <!-- Latest compiled and minified CSS -->
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -28,6 +31,7 @@
 
    <!-- LINK TO CSS PAGE STYLE -->
    <link rel="stylesheet" href="css/style.css" media="screen" title="page-style">
+   <script type="text/javascript" src="js/script.js"></script>
 </head>
 
 <body>
@@ -58,40 +62,205 @@
       </div>
       <!-- /.container-fluid -->
    </nav>
+
+   <!-- HEADER -->
    <header class="flex-centered blue-background text-center">
       <div class="main-part">
          <h1>Développeur<br>Front End</h1>
+
+         <!-- DECORATION ROND ET TRAIT EN ARRIERE PLAN(CSS) -->
          <div class="deco-round">
          </div>
          <div class="deco-line">
          </div>
       </div>
       <a href="#" class="btn btn-custom">Voir mon CV</a>
-      <a href="#" class="arrow-down"><i class="fa fa-arrow-down" aria-hidden="true"></i></a>
+
+      <!-- Fleche vers prochaine section -->
+      <a href="#" class="arrow-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
    </header>
+
    <section id="a-propos" class="grey-background container-fluid">
-      <div class="">
+
+      <div>
          <h3 class="section-title text-center">A propos de moi</h3>
          <figure id="photo-id"></figure>
       </div>
+
       <div class="text-bloc blue-background">
          <div class="deco-barre">
          </div>
-         <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+         <p class="text-justify">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
          </p>
       </div>
 
+      <!-- CARTES DE PRESENTATION -->
+      <div class="col-sm-10 col-sm-offset-1">
+         <div class="card col-md-4 col-sm-6">
+            <figure class="text-center">
+               <i class="fa fa-desktop"></i>
+            </figure>
+            <h3 class="text-center">Lorem ipsum</h3>
+            <p class="text-justify">
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+               in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+         </div>
+         <div class="card col-md-4 col-sm-6">
+            <figure class="text-center">
+               <i class="fa fa-lightbulb-o"></i>
+            </figure>
+            <h3 class="text-center">Lorem ipsum</h3>
+            <p class="text-justify">
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+               in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+         </div>
+         <div class="card col-md-4 col-sm-6">
+            <figure class="text-center">
+               <i class="fa fa-video-camera"></i>
+            </figure>
+            <h3 class="text-center">Lorem ipsum</h3>
+            <p class="text-justify">
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+               in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+         </div>
+      </div>
+
+      <!-- Fleche vers prochaine section -->
+      <a href="#" class="arrow-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+   </section>
+
+   <section id="competences" class="blue-background container-fluid">
+      <h3 class="section-title text-center">Mes compétences</h3>
+
+      <div class="row">
+         <div class="col-md-8">
+            <div class="col-sm-6 text-center flex-centered flex-columned">
+               <figure class="flex-centered">
+                  <i class="fa fa-code"></i>
+               </figure>
+               <h2>Développement</h2>
+            </div>
+            <div class="col-sm-6">
+               <ul>
+                  <li>HTML/CSS</li>
+                  <li>Préprocesseur CSS (Less, SASS)</li>
+                  <li>Javascript</li>
+                  <li>jQuery</li>
+                  <li>ReactJS</li>
+                  <li>AngularJS2</li>
+                  <li>NodesJS</li>
+               </ul>
+            </div>
+         </div>
+      </div>
+
+      <div class="row">
+         <div class="col-md-8 col-md-offset-4">
+            <div class="col-sm-6 text-center flex-centered flex-columned">
+               <figure class="flex-centered">
+                  <i class="fa fa-paint-brush"></i>
+               </figure>
+               <h2>Design/<br>Audiovisuel</h2>
+            </div>
+            <div class="col-sm-6">
+               <ul>
+                  <li>Photoshop</li>
+                  <li>In Design</li>
+                  <li>Illustrator</li>
+                  <li>After Effects</li>
+                  <li>Premiere Pro</li>
+                  <li>DaVinci Resolve</li>
+               </ul>
+            </div>
+         </div>
+      </div>
+
+      <!-- Fleche vers prochaine section -->
+      <a href="#" class="arrow-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+   </section>
+
+   <!-- MON TRAVAIL -->
+   <section id="travail" class="grey-background container-fluid">
+      <h3 class="section-title text-center">Mon travail</h3>
+      <div class="row">
+
+         <!-- projet container -->
+         <div class="col-xs-10 col-xs-offset-1">
+
+           <!-- Aperçu projet -->
+           <a href="#" class="col-md-6 projet-container">
+              <div class="projet-content" style="background:url('img/projet1.jpg')">
+                 <div class="projet-infos flex-centered flex-columned">
+                    <h4>Work 01</h4>
+                    <p>
+                       Intégration / Design
+                    </p>
+                 </div>
+              </div>
+           </a>
+           <!-- Fin aperçu projet -->
+
+            <!-- Aperçu projet -->
+            <a href="#" class="col-md-6 projet-container">
+               <div class="projet-content" style="background:url('img/projet2.jpg')">
+                  <div class="projet-infos flex-centered flex-columned">
+                     <h4>Work 02</h4>
+                     <p>
+                        Intégration / Design
+                     </p>
+                  </div>
+               </div>
+            </a>
+            <!-- Fin aperçu projet -->
+
+            <!-- Aperçu projet -->
+            <a href="#" class="col-md-6 projet-container">
+               <div class="projet-content" style="background:url('img/projet3.jpg')">
+                  <div class="projet-infos flex-centered flex-columned">
+                     <h4>Work 03</h4>
+                     <p>
+                        Intégration / Design
+                     </p>
+                  </div>
+               </div>
+            </a>
+            <!-- Fin aperçu projet -->
+
+            <!-- Aperçu projet -->
+            <a href="#" class="col-md-6 projet-container">
+               <div class="projet-content" style="background: url('img/projet4.jpg')">
+                  <div class="projet-infos flex-centered flex-columned">
+                     <h4>Work 04</h4>
+                     <p>
+                        Intégration / Design
+                     </p>
+                  </div>
+               </div>
+            </a>
+            <!-- Fin aperçu projet -->
+         </div>
+         <!-- Fin projet container -->
+
+
+
+
+      </div>
+
+
+
+      <!-- Fleche vers prochaine section -->
+      <a href="#" class="arrow-down"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
    </section>
 
 
 
 
 
-   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-   <!-- Include all compiled plugins (below), or include individual files as needed -->
-   <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>

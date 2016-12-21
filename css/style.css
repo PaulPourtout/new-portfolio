@@ -1,42 +1,51 @@
 /* GLOBAL CLASSES */
 
+section {
+    padding: 50px 0;
+}
+
 .flex-centered {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.flex-columned {
+    flex-direction: column;
+}
+
+.blue-background, .grey-background {
+    border-bottom: 3px solid #fff;
+    position: relative;
+}
+
 .blue-background {
     color: #fff;
     background-color: #303841;
-    border-bottom: 3px solid #fff;
 }
 
 .grey-background {
     color: #303841;
     background-color: #EEE;
-    border-bottom: 3px solid #fff;
 }
 
 .section-title {
-  font-size: 4rem;
-  text-transform: uppercase;
-  font-weight: bold;
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .blue-background .section-title {
-  text-shadow: ;
+    text-shadow: ;
 }
 
 .grey-background .section-title {
-  text-shadow: 3px 3px 0 #60666C;
+    text-shadow: 3px 3px 0 #60666C;
 }
 
-.text-center {
-    text-align: center;
-}
 
 /* Style boutons */
+
 .btn-custom {
     background-color: #2ecc71;
     color: #303841;
@@ -47,11 +56,12 @@
 }
 
 .btn-custom:hover {
-  background-color: #5ecc8c;
-
+    background-color: #5ecc8c;
 }
 
+
 /* Style fleches vers bas de page */
+
 .arrow-down {
     color: #fff;
     border-radius: 50%;
@@ -62,23 +72,30 @@
     position: absolute;
     bottom: 15px;
     left: 50%;
-    transform: translate(-50%);
+    transform: translateX(-50%);
     box-shadow: inset 0 0 0 0 #2ecc71;
     transition: 0.4s ease-in-out;
+    text-align: center;
+}
+
+.grey-background .arrow-down {
+    color: #303841;
+    border: 4px solid #303841;
 }
 
 .arrow-down i {
-  position: relative;
-  top: 7px;
-  transition: 0.3s;
+    position: relative;
+    top: 5px;
+    transition: 0.3s;
+}
+
+.blue-background .arrow-down {
+    color: #fff;
 }
 
 .arrow-down:hover, .arrow-down:active, .arrow-down:focus {
-box-shadow: inset 0px 60px 0 0 #2ecc71;
-}
-
-.arrow-down:hover, .arrow-down:focus, .arrow-down:active i {
-  color: #303841;
+    box-shadow: inset 0px 60px 0 0 #2ecc71;
+    /*color: #303841;*/
 }
 
 
@@ -165,23 +182,100 @@ header h1 {
 }
 
 header .btn-custom {
-  margin-top: 50px;
+    margin-top: 50px;
 }
+
 
 /* ====== A PROPOS DE MOI ====== */
-#a-propos {
-  padding: 50px 0;
-  height: 100vh;
+
+#photo-id {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-image: url("http://16315-presscdn-0-27.pagely.netdna-cdn.com/wp-content/uploads/2014/01/zachnelson-crop-feature_1.jpg");
+    background-size: cover;
+    border: 10px solid #303841;
+    margin: 50px auto;
+}
+
+#a-propos .text-bloc {
+    display: flex;
+}
+
+#a-propos .deco-barre {
+    background-color: #2ecc71;
+    width: 5%;
+    height: auto;
+}
+
+#a-propos .text-bloc p {
+    padding: 30px 5%;
+    margin: 0;
+    font-size: 1.8rem;
 }
 
 
+/* Cards*/
 
-#photo-id {
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
-  background-image: url("http://16315-presscdn-0-27.pagely.netdna-cdn.com/wp-content/uploads/2014/01/zachnelson-crop-feature_1.jpg");
-  background-size: cover;
-  border: 10px solid #303841;
-  margin: 0 auto;
+#a-propos .card {
+    margin: 30px 0;
+    padding: 0 3.5%;
+}
+
+#a-propos .card figure {
+    border: 5px solid #2ecc71;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    font-size: 5rem;
+}
+
+#a-propos .card figure i {
+    position: relative;
+    top: 12px;
+}
+
+
+/* ===== MES COMPETENCES ====== */
+
+#competences .row {
+    margin: 80px 0;
+}
+
+#competences figure {
+    font-size: 6rem;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #303841;
+}
+
+#competences ul {
+    list-style: none;
+    padding-left: 20px;
+    border-left: 2px solid #2ecc71;
+    font-size: 1.7rem;
+    margin: 0;
+}
+
+
+/* ===== MON TRAVAIL ===== */
+
+.projet-content {
+    position: relative;
+    border: 5px solid #2ecc71;
+    height: 250px;
+    background-size: 10%;
+    background-position: center;
+}
+
+#travail .projet-container {
+    margin: 50px 0;
+    padding: 30px;
+}
+
+#travail .projet-infos {
+    /*position: absolute;*/
 }
