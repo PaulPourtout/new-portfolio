@@ -1,7 +1,7 @@
 /* GLOBAL CLASSES */
 
 section {
-    padding: 50px 0;
+    padding: 80px 0;
 }
 
 .flex-centered {
@@ -53,6 +53,7 @@ section {
     font-weight: bold;
     font-size: 2rem;
     transition: 0.3s;
+    text-transform: uppercase;
 }
 
 .btn-custom:hover {
@@ -131,6 +132,28 @@ section {
 
 #main-navbar .navbar-right a:hover {
     box-shadow: inset 0 10px 0 0 #303841;
+}
+
+
+/* NAVBAR TOGGLE */
+
+.navbar-default .navbar-toggle {
+    border: none;
+    box-shadow: 1px 1px 0 #fff;
+    transition: 0.3s;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle:hover {
+    box-shadow: 3px 3px 0 #fff;
+    transform: translateY(-2px);
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
 }
 
 
@@ -263,38 +286,88 @@ header .btn-custom {
 
 /* ===== MON TRAVAIL ===== */
 
-
+#travail .projet-container {
+    padding: 30px;
+}
 
 .projet-content {
+    display: block;
     position: relative;
     border: 5px solid #d67f07;
     height: 250px;
     background-size: cover;
     background-position: center;
-    
+    overflow: hidden;
 }
 
 .projet-container:nth-child(1) .projet-content {
-  background-image: url("../img/projet1.jpg");
+    background-image: url("../img/projet1.jpg");
 }
 
 .projet-container:nth-child(2) .projet-content {
-  background-image: url("../img/projet2.jpg");
+    background-image: url("../img/projet2.jpg");
 }
 
 .projet-container:nth-child(3) .projet-container {
-  background-image: url("../img/projet3.jpg");
+    background-image: url("../img/projet3.jpg");
 }
 
 .projet-container:nth-child(4) .projet-content {
-  background-image: url("../img/projet4.jpg");
-}
-
-#travail .projet-container {
-    margin: 50px 0;
-    padding: 30px;
+    background-image: url("../img/projet4.jpg");
 }
 
 #travail .projet-infos {
-    /*position: absolute;*/
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 250px;
+    transition: 0.3s ease-in-out;
+}
+
+#travail .projet-content:hover .projet-infos {
+  top: 0;
+}
+
+
+/* ======= ME CONTACTER ====== */
+#contact label {
+  display: block;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+#contact textarea, input {
+  color: #000;
+  border: 2px solid #d67f07;
+  padding: 10px;
+  width: 100%;
+  border-radius: 3px;
+  font-size: 1.7rem;
+}
+
+#contact textarea {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+/* ====== FOOTER ====== */
+footer {
+  padding: 30px;
+  color: #fff;
+  background-color: #d67f07;
+}
+
+footer ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+footer .contact-icon {
+  background-color: #303841;
 }
